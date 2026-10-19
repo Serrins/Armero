@@ -1,0 +1,8 @@
+{
+  "name": "Armero - Medieval Goods Match",
+  "description": "A cozy medieval triple-sort puzzle game with soothing forest soundscapes, progressive shelf complexity, and handcrafted armory treasures.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

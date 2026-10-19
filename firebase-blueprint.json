@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "LeaderboardEntry": {
+      "title": "LeaderboardEntry",
+      "description": "A high score entry posted by a player for a specific armory level",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique record identifier"
+        },
+        "level": {
+          "type": "number",
+          "description": "Armory level number"
+        },
+        "playerName": {
+          "type": "string",
+          "maxLength": 32,
+          "description": "Player or armorer title display name"
+        },
+        "score": {
+          "type": "number",
+          "description": "Score achieved on this level"
+        },
+        "timeElapsedMs": {
+          "type": "number",
+          "description": "Milliseconds taken to complete the level"
+        },
+        "timeRemaining": {
+          "type": "number",
+          "description": "Seconds remaining on the timer when level completed"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp when the score was recorded"
+        }
+      },
+      "required": ["level", "playerName", "score"]
+    }
+  },
+  "firestore": {
+    "/leaderboards/{level}/entries/{entryId}": {
+      "schema": "LeaderboardEntry",
+      "description": "Collection of submitted scores for a specific level"
+    }
+  }
+}
