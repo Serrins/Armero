@@ -5,14 +5,14 @@
   "display": "standalone",
 "icons": [
     {
-      "src": "icon.svg",
-      "type": "image/svg+xml",
+      "src": "icon.png",
+      "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "icon.svg",
-      "type": "image/svg+xml",
+      "src": "icon.png",
+      "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
     }
